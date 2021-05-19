@@ -1,10 +1,22 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
+import Demo from '../views/Demo.vue'
+import Footer from '../views/Footer'
 
 Vue.use(VueRouter)
 
 const routes = [
+  {
+    path:'/footer',
+    component:Footer
+  }
+  ,
+  {
+    path: '/demo',
+    component: Demo
+  }
+  ,
   {
     path: '/',
     name: 'Home',
